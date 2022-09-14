@@ -70,7 +70,6 @@ class MainActivity : AppCompatActivity(), ActivityCompat.OnRequestPermissionsRes
             Log.d("Debug", "OPENED")
             if (checkSelfPermissionCompat(Manifest.permission.WRITE_EXTERNAL_STORAGE)==PackageManager.PERMISSION_GRANTED) {
                 startSave()
-                Toast.makeText(this, "Разрешение не предоставлено", Toast.LENGTH_LONG).show()
             } else {
                 requestStoragePermission()
             }
